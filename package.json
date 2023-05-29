@@ -7,6 +7,18 @@
   "author": "Rodrigo Tomé <hi@rodrigotome.es>",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RodrigoTomeES/astro-rename.git"
+  },
+  "keywords": [
+    "astro-integration",
+    "postcss-rename"
+  ],
+  "bugs": "https://github.com/RodrigoTomeES/astro-rename/issues",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "yarn lint && yarn tsc && lightrix build 'src/**/*.ts'",
     "prepare": "husky install",

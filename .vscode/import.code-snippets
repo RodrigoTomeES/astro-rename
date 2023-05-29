@@ -1,0 +1,7 @@
+{
+  "import": {
+    "prefix": "imp",
+    "description": "Import statement",
+    "body": ["import ${2:values} from '${1:specifier}';$0"]
+  }
+}

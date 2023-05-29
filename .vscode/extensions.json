@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "astro-build.astro-vscode",
+    "unifiedjs.vscode-mdx",
+    "esbenp.prettier-vscode",
+    "gruntfuggly.todo-tree",
+    "redhat.vscode-xml",
+    "wix.vscode-import-cost",
+    "usernamehw.errorlens",
+    "mikestead.dotenv",
+    "joshbolduc.commitlint"
+  ],
+  "unwantedRecommendations": []
+}

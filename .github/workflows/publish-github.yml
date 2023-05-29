@@ -20,4 +20,3 @@ jobs:
       - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_REGISTRY_SERVER: 'https://npm.pkg.github.com'

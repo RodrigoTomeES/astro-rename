@@ -21,10 +21,15 @@ yarn add --dev astro-rename
 
 ## Usage
 
+Add the plugin to your Astro config file:
+
 ```js
 import rename from 'astro-rename';
 
 export default defineConfig({
+  // It's important to set the output directory to "static" because it's the only method that will work with the current version of the plugin.
+  // If you don't set this, the plugin will throw an error.
+  output: 'static',
   integrations: [rename()],
 });
 ```
@@ -95,6 +100,31 @@ type RenameOptions = {
   matchClasses?: (key: string) => string;
 };
 ````
+
+## Configuration with other plugins
+
+If you're using other plugins that modify your CSS, you may need to adjust the order in which they are applied. For example:
+
+```ts
+import tailwind from '@astrojs/tailwind';
+import compress from 'astro-compress';
+import critters from 'astro-critters';
+import rename from 'astro-rename';
+
+export default defineConfig({
+  output: 'static',
+  integrations: [
+    // First, run Tailwind to generate the CSS
+    tailwind(),
+    // Then, compress the class names
+    rename(),
+    // Finally, inline the critical CSS
+    critters(),
+    // And compress the CSS, HTML, JS... files
+    compress(),
+  ],
+});
+```
 
 ## TODO
 

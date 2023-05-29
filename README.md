@@ -136,6 +136,7 @@ Here's a list of tasks I plan to work on:
 - [ ] Enable handling of multiple CSS files
 - [ ] Implement support for CSS variables
 - [ ] Include server-side rendering support
+- [ ] Move temporal files to a temporary directory instead of the root of the project
 
 ## Licence
 

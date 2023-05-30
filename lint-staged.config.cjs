@@ -1,5 +1,5 @@
 const config = {
-  '**/*.(ts|tsx)': () => 'yarn tsc --noEmit',
+  '**/*.(ts|tsx)': () => 'yarn tsc',
 
   '**/*.(ts|tsx|js|cjs|mjs|jsx|astro)': (filenames) => [
     `yarn lint --fix ${filenames.join(' ')}`,

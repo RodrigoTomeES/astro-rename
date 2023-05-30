@@ -212,6 +212,7 @@ Here's a list of tasks I plan to work on:
 - [ ] Include server-side rendering support
 - [ ] Move temporal files to a temporary directory instead of the root of the project
 - [ ] Improve stadistics of file size reduction
+- [ ] Show size of the result files with gzip and brotli
 
 ## Licence
 
@@ -223,3 +224,4 @@ Special thanks to the following individuals and projects:
 
 - [postcss-rename](https://github.com/google/postcss-rename) by Google
 - [@JSC0DER](https://github.com/JSC0DER) for their assistance with the [initial idea](https://github.com/google/postcss-rename/discussions/44)
+- [@Gechu03](https://github.com/Gechu03) and [@sergiomalagon](https://github.com/sergiomalagon) for their assistance with the regular expressions to match the CSS selectors

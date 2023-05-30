@@ -1782,6 +1782,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": 5.59.7
     "@typescript-eslint/parser": 5.59.7
     astro: 2.5.5
+    console-table-printer: 2.11.1
     cz-conventional-changelog: 3.3.0
     eslint: 8.41.0
     eslint-config-prettier: 8.8.0
@@ -2425,6 +2426,15 @@ __metadata:
   version: 1.1.0
   resolution: "console-control-strings@npm:1.1.0"
   checksum: 8755d76787f94e6cf79ce4666f0c5519906d7f5b02d4b884cf41e11dcd759ed69c57da0670afd9236d229a46e0f9cf519db0cd829c6dca820bb5a5c3def584ed
+  languageName: node
+  linkType: hard
+
+"console-table-printer@npm:2.11.1":
+  version: 2.11.1
+  resolution: "console-table-printer@npm:2.11.1"
+  dependencies:
+    simple-wcswidth: ^1.0.1
+  checksum: 1c5ec6c5edb8f454ac78ce2708c96b29986db4c1f369b32acc1931f87658a65984a8cf8731ca548dea670ff04119c740a7d658eeba9633d0202983c71d957096
   languageName: node
   linkType: hard
 
@@ -6640,6 +6650,13 @@ __metadata:
   version: 3.0.7
   resolution: "signal-exit@npm:3.0.7"
   checksum: a2f098f247adc367dffc27845853e9959b9e88b01cb301658cfe4194352d8d2bb32e18467c786a7fe15f1d44b233ea35633d076d5e737870b7139949d1ab6318
+  languageName: node
+  linkType: hard
+
+"simple-wcswidth@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "simple-wcswidth@npm:1.0.1"
+  checksum: dc5bf4cb131d9c386825d1355add2b1ecc408b37dc2c2334edd7a1a4c9f527e6b594dedcdbf6d949bce2740c3a332e39af1183072a2d068e40d9e9146067a37f
   languageName: node
   linkType: hard
 

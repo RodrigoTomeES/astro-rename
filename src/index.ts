@@ -1,14 +1,16 @@
 import { mkdir, readFile, rmdir, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
+import { brotliCompressSync, gzipSync } from 'node:zlib';
+import { Table } from 'console-table-printer';
 import md5 from 'md5';
 import prettyBytes from 'pretty-bytes';
 
 import { defaultOptions } from './options.js';
 import {
-  MAPS_DIRECTORY,
   calculatePercent,
   escapeRegExp,
   getViteConfiguration,
+  MAPS_DIRECTORY,
   walkFiles,
 } from './utils.js';
 
@@ -87,7 +89,6 @@ export default function renameIntegration(
       'astro:build:done': async ({ dir }) => {
         const dist = fileURLToPath(dir);
         let classMap = {};
-        let totalSaved = 0;
 
         try {
           for await (const map of walkFiles(MAPS_DIRECTORY)) {
@@ -105,6 +106,8 @@ export default function renameIntegration(
         }
 
         try {
+          const stats = new Table();
+
           for await (const file of walkFiles(dist)) {
             if (!_options.targetExt.some((ext) => file.endsWith(ext))) continue;
 
@@ -131,24 +134,18 @@ export default function renameIntegration(
 
             const newSize = content.length;
             const percent = calculatePercent(oldSize, newSize);
-            totalSaved += oldSize - newSize;
 
-            // eslint-disable-next-line no-console
-            console.info(
-              `Processed: ${prettyBytes(
-                newSize
-              )} (reduced ${percent}% of original ${prettyBytes(
-                oldSize
-              )}) of ${fileName}.`
-            );
+            stats.addRow({
+              File: fileName,
+              'Original Size': prettyBytes(oldSize),
+              'New Size': prettyBytes(newSize),
+              Reduced: `${percent}%`,
+              Gzip: prettyBytes(gzipSync(content).byteLength),
+              Brotli: prettyBytes(brotliCompressSync(content).byteLength),
+            });
           }
 
-          // eslint-disable-next-line no-console
-          console.info('\n');
-          // eslint-disable-next-line no-console
-          console.info(
-            `\u001b[32mTotal saved ${prettyBytes(totalSaved)}.\u001b[39m`
-          );
+          stats.printTable();
         } catch (_) {
           // eslint-disable-next-line no-console
           console.error(

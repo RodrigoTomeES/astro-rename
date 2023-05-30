@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Show size of the result files with gzip and brotli
+- Improve stadistics of file size reduction
+
 ## [1.0.0] - 2023-05-29
 
 ### Added

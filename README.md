@@ -131,73 +131,73 @@ export default defineConfig({
 Here's an example of the plugin in action in my [awa-db](https://github.com/RodrigoTomeES/awa-db) project. The average size reduction of HTML files is around 50%.
 
 ```bash
-Processed: 9.94 kB (reduced 52% of original 20.7 kB) of 1\index.html.
-Processed: 9.81 kB (reduced 52% of original 20.6 kB) of 10\index.html.
-Processed: 9.91 kB (reduced 52% of original 20.7 kB) of 11\index.html.
-Processed: 9.82 kB (reduced 52% of original 20.6 kB) of 12\index.html.
-Processed: 9.84 kB (reduced 52% of original 20.6 kB) of 13\index.html.
-Processed: 9.78 kB (reduced 52% of original 20.5 kB) of 14\index.html.
-Processed: 9.9 kB (reduced 52% of original 20.7 kB) of 15\index.html.
-Processed: 9.98 kB (reduced 51% of original 20.7 kB) of 16\index.html.
-Processed: 9.92 kB (reduced 52% of original 20.7 kB) of 17\index.html.
-Processed: 9.67 kB (reduced 52% of original 20.4 kB) of 18\index.html.
-Processed: 9.82 kB (reduced 52% of original 20.6 kB) of 19\index.html.
-Processed: 9.8 kB (reduced 52% of original 20.6 kB) of 2\index.html.
-Processed: 12 kB (reduced 47% of original 22.8 kB) of 20\index.html.
-Processed: 9.93 kB (reduced 52% of original 20.7 kB) of 21\index.html.
-Processed: 11.3 kB (reduced 48% of original 22 kB) of 22\index.html.
-Processed: 9.94 kB (reduced 51% of original 20.7 kB) of 23\index.html.
-Processed: 6.82 kB (reduced 50% of original 13.8 kB) of 24\index.html.
-Processed: 9.66 kB (reduced 52% of original 20.4 kB) of 3\index.html.
-Processed: 9.72 kB (reduced 52% of original 20.5 kB) of 4\index.html.
-Processed: 9.54 kB (reduced 53% of original 20.3 kB) of 5\index.html.
-Processed: 9.75 kB (reduced 52% of original 20.5 kB) of 6\index.html.
-Processed: 9.58 kB (reduced 52% of original 20.3 kB) of 7\index.html.
-Processed: 9.68 kB (reduced 52% of original 20.4 kB) of 8\index.html.
-Processed: 9.71 kB (reduced 52% of original 20.5 kB) of 9\index.html.
-Processed: 8.98 kB (reduced 49% of original 17.9 kB) of artifacts\1\index.html.
-Processed: 9.68 kB (reduced 52% of original 20.4 kB) of avatars\1\index.html.
-Processed: 9.8 kB (reduced 52% of original 20.6 kB) of avatars\10\index.html.
-Processed: 9.71 kB (reduced 52% of original 20.5 kB) of avatars\11\index.html.
-Processed: 9.9 kB (reduced 52% of original 20.7 kB) of avatars\12\index.html.
-Processed: 9.89 kB (reduced 52% of original 20.7 kB) of avatars\13\index.html.
-Processed: 9.77 kB (reduced 52% of original 20.5 kB) of avatars\14\index.html.
-Processed: 9.62 kB (reduced 52% of original 20.4 kB) of avatars\15\index.html.
-Processed: 7.77 kB (reduced 51% of original 16 kB) of avatars\16\index.html.
-Processed: 9.78 kB (reduced 52% of original 20.5 kB) of avatars\2\index.html.
-Processed: 9.52 kB (reduced 53% of original 20.3 kB) of avatars\3\index.html.
-Processed: 9.71 kB (reduced 52% of original 20.5 kB) of avatars\4\index.html.
-Processed: 9.64 kB (reduced 52% of original 20.4 kB) of avatars\5\index.html.
-Processed: 9.67 kB (reduced 52% of original 20.4 kB) of avatars\6\index.html.
-Processed: 9.68 kB (reduced 52% of original 20.4 kB) of avatars\7\index.html.
-Processed: 9.82 kB (reduced 52% of original 20.6 kB) of avatars\8\index.html.
-Processed: 9.93 kB (reduced 52% of original 20.7 kB) of avatars\9\index.html.
-Processed: 9.97 kB (reduced 51% of original 20.7 kB) of badges-and-borders\1\index.html.
-Processed: 9.88 kB (reduced 52% of original 20.6 kB) of badges-and-borders\2\index.html.
-Processed: 10.1 kB (reduced 51% of original 20.8 kB) of badges-and-borders\3\index.html.
-Processed: 8.79 kB (reduced 51% of original 18.3 kB) of badges-and-borders\4\index.html.
-Processed: 9.98 kB (reduced 51% of original 20.7 kB) of dell-rewards\1\index.html.
-Processed: 10.2 kB (reduced 51% of original 21 kB) of dell-rewards\2\index.html.
-Processed: 12.2 kB (reduced 46% of original 22.9 kB) of game-vault\1\index.html.
-Processed: 6.47 kB (reduced 44% of original 11.6 kB) of game-vault\2\index.html.
-Processed: 9.89 kB (reduced 52% of original 20.7 kB) of index.html.
-Processed: 9.81 kB (reduced 52% of original 20.6 kB) of unknown\1\index.html.
-Processed: 9.14 kB (reduced 54% of original 19.9 kB) of unknown\10\index.html.
-Processed: 9.36 kB (reduced 53% of original 20.1 kB) of unknown\11\index.html.
-Processed: 9 kB (reduced 54% of original 19.8 kB) of unknown\12\index.html.
-Processed: 8.9 kB (reduced 54% of original 19.7 kB) of unknown\13\index.html.
-Processed: 9.77 kB (reduced 52% of original 20.5 kB) of unknown\2\index.html.
-Processed: 8.92 kB (reduced 54% of original 19.7 kB) of unknown\3\index.html.
-Processed: 8.84 kB (reduced 54% of original 19.6 kB) of unknown\4\index.html.
-Processed: 8.84 kB (reduced 54% of original 19.6 kB) of unknown\5\index.html.
-Processed: 8.84 kB (reduced 54% of original 19.6 kB) of unknown\6\index.html.
-Processed: 8.84 kB (reduced 54% of original 19.6 kB) of unknown\7\index.html.
-Processed: 8.92 kB (reduced 54% of original 19.7 kB) of unknown\8\index.html.
-Processed: 9.07 kB (reduced 54% of original 19.8 kB) of unknown\9\index.html.
-Processed: 1.76 kB (reduced 0% of original 1.76 kB) of _astro\page.07ed4ffe.js.
-
-
-Total saved 663 kB.
+┌─────────────────────────────────┬───────────────┬──────────┬─────────┬─────────┬─────────┐
+│                            File │ Original Size │ New Size │ Reduced │    Gzip │  Brotli │
+├─────────────────────────────────┼───────────────┼──────────┼─────────┼─────────┼─────────┤
+│                    1\index.html │       20.7 kB │  9.94 kB │     52% │ 2.68 kB │ 2.21 kB │
+│                   10\index.html │       20.6 kB │  9.81 kB │     52% │ 2.68 kB │ 2.21 kB │
+│                   11\index.html │       20.7 kB │  9.91 kB │     52% │ 2.71 kB │ 2.22 kB │
+│                   12\index.html │       20.6 kB │  9.82 kB │     52% │ 2.65 kB │ 2.18 kB │
+│                   13\index.html │       20.6 kB │  9.84 kB │     52% │ 2.71 kB │ 2.22 kB │
+│                   14\index.html │       20.5 kB │  9.78 kB │     52% │ 2.63 kB │ 2.15 kB │
+│                   15\index.html │       20.7 kB │   9.9 kB │     52% │ 2.72 kB │ 2.27 kB │
+│                   16\index.html │       20.7 kB │  9.98 kB │     51% │ 2.72 kB │ 2.24 kB │
+│                   17\index.html │       20.7 kB │  9.92 kB │     52% │  2.7 kB │ 2.22 kB │
+│                   18\index.html │       20.4 kB │  9.67 kB │     52% │ 2.54 kB │ 2.08 kB │
+│                   19\index.html │       20.6 kB │  9.82 kB │     52% │ 2.63 kB │ 2.15 kB │
+│                    2\index.html │       20.6 kB │   9.8 kB │     52% │  2.7 kB │  2.2 kB │
+│                   20\index.html │       22.8 kB │    12 kB │     47% │ 3.72 kB │ 2.97 kB │
+│                   21\index.html │       20.7 kB │  9.93 kB │     52% │ 2.79 kB │ 2.25 kB │
+│                   22\index.html │         22 kB │  11.3 kB │     48% │ 3.48 kB │ 2.84 kB │
+│                   23\index.html │       20.7 kB │  9.94 kB │     51% │ 2.52 kB │ 2.04 kB │
+│                   24\index.html │       13.8 kB │  6.82 kB │     50% │ 2.21 kB │ 1.81 kB │
+│                    3\index.html │       20.4 kB │  9.66 kB │     52% │  2.6 kB │ 2.16 kB │
+│                    4\index.html │       20.5 kB │  9.72 kB │     52% │ 2.58 kB │ 2.12 kB │
+│                    5\index.html │       20.3 kB │  9.54 kB │     53% │ 2.52 kB │ 2.09 kB │
+│                    6\index.html │       20.5 kB │  9.75 kB │     52% │ 2.63 kB │ 2.17 kB │
+│                    7\index.html │       20.3 kB │  9.58 kB │     52% │  2.6 kB │ 2.15 kB │
+│                    8\index.html │       20.4 kB │  9.68 kB │     52% │ 2.62 kB │ 2.16 kB │
+│                    9\index.html │       20.5 kB │  9.71 kB │     52% │ 2.64 kB │ 2.19 kB │
+│          artifacts\1\index.html │       17.9 kB │  8.98 kB │     49% │ 2.74 kB │ 2.19 kB │
+│            avatars\1\index.html │       20.4 kB │  9.68 kB │     52% │  2.6 kB │ 2.15 kB │
+│           avatars\10\index.html │       20.6 kB │   9.8 kB │     52% │ 2.69 kB │  2.2 kB │
+│           avatars\11\index.html │       20.5 kB │  9.71 kB │     52% │ 2.57 kB │ 2.12 kB │
+│           avatars\12\index.html │       20.7 kB │   9.9 kB │     52% │ 2.74 kB │ 2.25 kB │
+│           avatars\13\index.html │       20.7 kB │  9.89 kB │     52% │ 2.65 kB │ 2.18 kB │
+│           avatars\14\index.html │       20.5 kB │  9.77 kB │     52% │ 2.58 kB │ 2.12 kB │
+│           avatars\15\index.html │       20.4 kB │  9.62 kB │     52% │ 2.58 kB │ 2.13 kB │
+│           avatars\16\index.html │         16 kB │  7.77 kB │     51% │ 2.34 kB │ 1.92 kB │
+│            avatars\2\index.html │       20.5 kB │  9.78 kB │     52% │ 2.58 kB │ 2.12 kB │
+│            avatars\3\index.html │       20.3 kB │  9.52 kB │     53% │ 2.52 kB │ 2.08 kB │
+│            avatars\4\index.html │       20.5 kB │  9.71 kB │     52% │ 2.56 kB │ 2.12 kB │
+│            avatars\5\index.html │       20.4 kB │  9.64 kB │     52% │  2.6 kB │ 2.16 kB │
+│            avatars\6\index.html │       20.4 kB │  9.67 kB │     52% │ 2.63 kB │ 2.17 kB │
+│            avatars\7\index.html │       20.4 kB │  9.68 kB │     52% │ 2.62 kB │ 2.17 kB │
+│            avatars\8\index.html │       20.6 kB │  9.82 kB │     52% │ 2.62 kB │ 2.15 kB │
+│            avatars\9\index.html │       20.7 kB │  9.93 kB │     52% │ 2.67 kB │ 2.19 kB │
+│ badges-and-borders\1\index.html │       20.7 kB │  9.97 kB │     51% │ 2.69 kB │ 2.21 kB │
+│ badges-and-borders\2\index.html │       20.6 kB │  9.88 kB │     52% │ 2.68 kB │ 2.21 kB │
+│ badges-and-borders\3\index.html │       20.8 kB │  10.1 kB │     51% │ 2.76 kB │ 2.26 kB │
+│ badges-and-borders\4\index.html │       18.3 kB │  8.79 kB │     51% │ 2.46 kB │ 2.03 kB │
+│       dell-rewards\1\index.html │       20.7 kB │  9.98 kB │     51% │  2.7 kB │ 2.22 kB │
+│       dell-rewards\2\index.html │         21 kB │  10.2 kB │     51% │ 2.35 kB │ 1.89 kB │
+│         game-vault\1\index.html │       22.9 kB │  12.2 kB │     46% │ 3.76 kB │ 3.02 kB │
+│         game-vault\2\index.html │       11.6 kB │  6.47 kB │     44% │ 2.54 kB │ 2.05 kB │
+│                      index.html │       20.7 kB │  9.89 kB │     52% │ 2.66 kB │  2.2 kB │
+│            unknown\1\index.html │       20.6 kB │  9.81 kB │     52% │ 1.86 kB │ 1.48 kB │
+│           unknown\10\index.html │       19.9 kB │  9.14 kB │     54% │ 1.83 kB │ 1.44 kB │
+│           unknown\11\index.html │       20.1 kB │  9.36 kB │     53% │ 1.87 kB │ 1.47 kB │
+│           unknown\12\index.html │       19.8 kB │     9 kB │     54% │ 1.85 kB │ 1.45 kB │
+│           unknown\13\index.html │       19.7 kB │   8.9 kB │     54% │ 1.83 kB │ 1.45 kB │
+│            unknown\2\index.html │       20.5 kB │  9.77 kB │     52% │ 1.84 kB │ 1.46 kB │
+│            unknown\3\index.html │       19.7 kB │  8.92 kB │     54% │ 1.86 kB │ 1.48 kB │
+│            unknown\4\index.html │       19.6 kB │  8.84 kB │     54% │ 1.82 kB │ 1.44 kB │
+│            unknown\5\index.html │       19.6 kB │  8.84 kB │     54% │ 1.82 kB │ 1.44 kB │
+│            unknown\6\index.html │       19.6 kB │  8.84 kB │     54% │ 1.82 kB │ 1.44 kB │
+│            unknown\7\index.html │       19.6 kB │  8.84 kB │     54% │ 1.82 kB │ 1.45 kB │
+│            unknown\8\index.html │       19.7 kB │  8.92 kB │     54% │ 1.84 kB │ 1.45 kB │
+│            unknown\9\index.html │       19.8 kB │  9.07 kB │     54% │ 1.84 kB │ 1.45 kB │
+└─────────────────────────────────┴───────────────┴──────────┴─────────┴─────────┴─────────┘
 ```
 
 ## TODO
@@ -212,7 +212,7 @@ Here's a list of tasks I plan to work on:
 - [ ] Include server-side rendering support
 - [ ] Move temporal files to a temporary directory instead of the root of the project
 - [ ] Improve stadistics of file size reduction
-- [ ] Show size of the result files with gzip and brotli
+- [x] Show size of the result files with gzip and brotli
 
 ## Licence
 
